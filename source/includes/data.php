@@ -1,4 +1,8 @@
 <?php
+  $mfhclass        = new stdclass;
+  $mfhclass->info  = new stdclass;
+  $mfhclass->input = new stdclass;
+
 	// ======================================== \
 	// NasuTek Multi Forum Host v4.0.x
 	// Copyright (c) 2009 NasuTek Systems
@@ -11,8 +15,6 @@
 
 	header("Cache-Control: no-cache, must-revalidate;"); 
 	header("Expires: Mon, 26 Jul 1997 05:00:00 GMT;");
-
-	$mfhclass = new stdClass;
 
 	ini_set("display_errors"  , 1); 
 	ini_set("register_globals", 0);
