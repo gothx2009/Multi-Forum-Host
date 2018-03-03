@@ -1,13 +1,10 @@
 <?php
-class mfh_passwordfuncts 
-{
-       var $itoa64;
-       var $iteration_count_log2;
-       var $portable_hashes;
-       var $random_state;
-
-       function mfh_passwordfuncts($iteration_count_log2, $portable_hashes)
-       {
+  class mfh_passwordfuncts {
+    var $itoa64;
+    var $iteration_count_log2;
+    var $portable_hashes;
+    var $random_state;
+    function __construct($iteration_count_log2, $portable_hashes) {
           $this->itoa64 = './0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
 
           if ($iteration_count_log2 < 4 || $iteration_count_log2 > 31)
